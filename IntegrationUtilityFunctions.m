@@ -367,7 +367,9 @@ EqQ[u_,v_] := Quiet[PossibleZeroQ[u-v]] || Refine[u==v]===True
 
 NeQ::usage = "If u-v equals 0, NeQ[u,v] returns False; else it returns True.";
 NeQ[u_,v_] := Not[Quiet[PossibleZeroQ[u-v]] || Refine[u==v]===True]
-NeQ[args___] := Null /; CheckArguments[NeQ[args], 2]
+(* Rocky was here: Mathics3 is matching the below before the above.
+So until Mathics3 is fixed, we'll just remove the rule!? *)
+(* NeQ[args___] := Null /; CheckArguments[NeQ[args], 2] *)
 
 
 (* ::Subsection::Closed:: *)
