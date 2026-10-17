@@ -9,22 +9,20 @@ Mathics-core branch dependency: https://github.com/Mathics3/mathics-core/tree/at
 
 # Setting up and Running
 
-A version of this comes distributed with Mathics3 version 8 or greater.
-
 To develop
 
 ```
         $ git clone git@github.com:Mathic3/Mathics3-Package-Rubi.git
         $ cd Mathics3-Package-Rubi
-        $ mathics
+        $ mathics3
 ```
 
 ```mathematica
-        Mathics 7.0.1dev0
-        on CPython 3.11.10 | packaged by conda-forge | (main, Oct 16 2024, 01:27:36) [GCC 13.3.0]
-        using SymPy 1.13.3, mpmath 1.3.0, numpy 2.1.3, cython Not installed
+	    Mathics3 10.0.1
+	    Running on linux CPython 3.14.6 (main, Jul 11 2026, 11:12:13) [GCC 13.3.0]
+	    using SymPy 1.13.3, mpmath 1.3.0, numpy 2.5.2, cython 3.2.8, scipy 1.17.1, skimage 0.26.0
 
-        Copyright (C) 2011-2024 The Mathics3 Team.
+	    Copyright (C) 2011-2026 The Mathics3 Team.
         This program comes with ABSOLUTELY NO WARRANTY.
         This is free software, and you are welcome to redistribute it
         under certain conditions.
@@ -32,24 +30,24 @@ To develop
 
         Quit by evaluating Quit[] or by pressing CONTROL-D.
 
-        In[1]:= << Rubi.m
+        In[1]:= << Rubi.wl
         Loading Rubi 4.17.3.0 will take a minute or two. In the future this will take less than a second.
         ...
         Patching With[]...
 
-        Loading /home/ark/git/mathics/rubi/ShowStepFormatting.m...
+        Loading /home/ark/git/mathics/rubi/ShowStepFormatting.wl...
         SetDelayed::write: Tag HoldPattern in HoldPattern[Dist[u_, v_, _]] is Protected.
         SetDelayed::write: Tag HoldPattern in HoldPattern[Int[expr_, x_]] is Protected.
 
 
         Out[1]= None
 
-        In[2]:= << Test.m
+        In[2]:= << Test.wl
         Out[2]= None
 
-        In[3]:= TestRubi["SanityCheck.m"]
+        In[3]:= TestRubi["SanityCheck.wl"]
         Rubi 4.17.3.0 Integration Test Results
-        on the problems in "SanityCheck.m"
+        on the problems in "SanityCheck.wl"
         ...
         Hold[IntegrationTestProgram`Private`Int[1 / x ^ (5 / 2), x]]
         Result optimal and 1 fewer steps used.
