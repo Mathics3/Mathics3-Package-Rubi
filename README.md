@@ -32,18 +32,19 @@ To develop
 
         In[1]:= << Rubi.wl
         Loading Rubi 4.17.3.0 will take a minute or two. In the future this will take less than a second.
+        Loading /src/external-vcs/github/Mathics3/Mathics3-Package-Rubi/IntegrationUtilityFunctions.wl...
+
+        Loading /src/external-vcs/github/Mathics3/Mathics3-Package-Rubi/IntegrationRules/1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.1 (a+b x)^m.wl...
+
+        Loading /src/external-vcs/github/Mathics3/Mathics3-Package-Rubi/IntegrationRules/1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n.wl...
+
         ...
         Patching With[]...
 
         Loading /home/ark/git/mathics/rubi/ShowStepFormatting.wl...
-        SetDelayed::write: Tag HoldPattern in HoldPattern[Dist[u_, v_, _]] is Protected.
-        SetDelayed::write: Tag HoldPattern in HoldPattern[Int[expr_, x_]] is Protected.
 
-
-        Out[1]= None
 
         In[2]:= << Test.wl
-        Out[2]= None
 
         In[3]:= TestRubi["SanityCheck.wl"]
         Rubi 4.17.3.0 Integration Test Results
